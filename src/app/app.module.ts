@@ -9,6 +9,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TestingPage } from '../pages/testing/testing';
+import { SettingPage } from '../pages/Setting/Setting';
 import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { FIREBASE_CONFIG } from './firebase.credentials';
@@ -18,7 +19,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
     MyApp,
     HomePage,
     ListPage,
-    TestingPage
+    TestingPage,
+    SettingPage
 
   ],
   imports: [
@@ -32,7 +34,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
     MyApp,
     HomePage,
     ListPage,
-    TestingPage
+    TestingPage,
+    SettingPage
   ],
   providers: [
     StatusBar,
