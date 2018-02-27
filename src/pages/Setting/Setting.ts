@@ -7,8 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 export class SettingPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
 
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SettingPage');
   }
 
 }
