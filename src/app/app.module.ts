@@ -9,9 +9,19 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TestingPage } from '../pages/testing/testing';
-import {AngularFireModule} from 'angularfire2';
-import {AngularFireDatabaseModule} from 'angularfire2/database';
-import { FIREBASE_CONFIG } from './firebase.credentials';
+import { HttpModule } from '@angular/http';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+import { FirebaseProvider } from './../providers/firebase/firebase';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBzGz-K-8U3WX9MyE6bTqOYfixiYWXxqTM",
+  authDomain: "e-sastera.firebaseapp.com",
+  databaseURL: "https://e-sastera.firebaseio.com",
+  projectId: "e-sastera",
+  storageBucket: "e-sastera.appspot.com",
+  messagingSenderId: "673971666655"
+};
 
 @NgModule({
   declarations: [
@@ -23,9 +33,9 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    HttpModule,
     AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(firebaseConfig),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +47,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    FirebaseProvider,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })
 export class AppModule {}
