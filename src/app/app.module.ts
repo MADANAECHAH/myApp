@@ -25,8 +25,6 @@ import { SettingPage } from '../pages/Setting/Setting';
   imports: [
     BrowserModule,
     HttpModule,
-    AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(firebaseConfig),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
