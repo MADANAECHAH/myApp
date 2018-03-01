@@ -38,7 +38,6 @@ import { SettingPage } from '../pages/Setting/Setting';
   providers: [
     StatusBar,
     SplashScreen,
-    FirebaseProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })
