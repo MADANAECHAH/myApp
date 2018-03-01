@@ -44,6 +44,7 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
     HttpModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(firebaseConfig),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
