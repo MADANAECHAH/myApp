@@ -10,12 +10,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TestingPage } from '../pages/testing/testing';
 import { HttpModule } from '@angular/http';
-
 import { SettingPage } from '../pages/Setting/Setting';
+import { LoginPage } from '../pages/Login/Login';
 
 @NgModule({
   declarations: [
     MyApp,
+    LoginPage,  
     HomePage,
     ListPage,
     TestingPage,
@@ -30,10 +31,12 @@ import { SettingPage } from '../pages/Setting/Setting';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    LoginPage,
     HomePage,
     ListPage,
     TestingPage,
     SettingPage
+    
   ],
   providers: [
     StatusBar,
