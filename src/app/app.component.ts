@@ -31,7 +31,7 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'test', component: TestingPage },
       { title: 'Setting', component: SettingPage },
-      { title: 'register' , component: RegisterPage}
+      { title: 'Register' , component: RegisterPage}
       
     ];
 
