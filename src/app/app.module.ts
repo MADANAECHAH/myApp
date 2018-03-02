@@ -10,7 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TestingPage } from '../pages/testing/testing';
 import { HttpModule } from '@angular/http';
-};
+
 import { SettingPage } from '../pages/Setting/Setting';
 
 @NgModule({
