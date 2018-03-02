@@ -9,10 +9,6 @@ import { ListPage } from '../pages/list/list';
 import { TestingPage } from '../pages/testing/testing';
 import { SettingPage } from '../pages/Setting/Setting';
 import { RegisterPage } from '../pages/register/register';
-<<<<<<< HEAD
-
-=======
->>>>>>> 4e9c742c7ebebf92420c902e713fa0028385676e
 
 
 @Component({
@@ -35,12 +31,7 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'test', component: TestingPage },
       { title: 'Setting', component: SettingPage },
-<<<<<<< HEAD
-      { title: 'Register', component: RegisterPage }
-
-=======
       { title: 'register' , component: RegisterPage}
->>>>>>> 4e9c742c7ebebf92420c902e713fa0028385676e
       
     ];
 
