@@ -12,8 +12,12 @@ import { TestingPage } from '../pages/testing/testing';
 import { HttpModule } from '@angular/http';
 import { SettingPage } from '../pages/Setting/Setting';
 import { LoginPage } from '../pages/Login/Login';
+<<<<<<< HEAD
 import { RegisterPage } from '../pages/Register/Register';
 
+=======
+import { RegisterPage } from '../pages/register/register' ;
+>>>>>>> 4e9c742c7ebebf92420c902e713fa0028385676e
 
 @NgModule({
   declarations: [
