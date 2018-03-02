@@ -12,6 +12,8 @@ import { TestingPage } from '../pages/testing/testing';
 import { HttpModule } from '@angular/http';
 import { SettingPage } from '../pages/Setting/Setting';
 import { LoginPage } from '../pages/Login/Login';
+import { RegisterPage } from '../pages/Register/Register';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { LoginPage } from '../pages/Login/Login';
     HomePage,
     ListPage,
     TestingPage,
-    SettingPage
+    SettingPage,
+    RegisterPage
 
   ],
   imports: [
@@ -35,7 +38,8 @@ import { LoginPage } from '../pages/Login/Login';
     HomePage,
     ListPage,
     TestingPage,
-    SettingPage
+    SettingPage,
+    RegisterPage
     
   ],
   providers: [
