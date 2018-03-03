@@ -13,6 +13,11 @@ import { HttpModule } from '@angular/http';
 import { SettingPage } from '../pages/Setting/Setting';
 import { LoginPage } from '../pages/Login/Login';
 import { RegisterPage } from '../pages/register/register' ;
+import { FIREBASE_CONFIG } from "./app.firebase.config";
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from "angularfire2/auth";
+import { RegisterPageModule } from '../pages/register/register.module';
+
 
 @NgModule({
   declarations: [
@@ -21,25 +26,29 @@ import { RegisterPage } from '../pages/register/register' ;
     HomePage,
     ListPage,
     TestingPage,
-    SettingPage,
-    RegisterPage
+    SettingPage
+   
 
   ],
   imports: [
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFireAuthModule,
+    RegisterPageModule
 
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    RegisterPage,
     LoginPage,
     HomePage,
     ListPage,
     TestingPage,
-    SettingPage,
-    RegisterPage
+    SettingPage
+    
     
   ],
   providers: [
