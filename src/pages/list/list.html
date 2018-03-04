@@ -4,21 +4,194 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Senarai</ion-title>
+    <ion-title>List Of Words</ion-title>
   </ion-navbar>
 </ion-header>
+<style>
+
+body{border-top: 50px; background-color: whitesmoke;overflow: auto;}
+
+
+</style>
+
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+  
+  <body>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+<div id="list">
+  
+
+  <a href="#a">A</a>
+  <a href="#b">B</a>
+  <a href="#c">C</a>
+  <a href="#d">D</a>
+  <a href="#e">E</a>
+  <a href="#f">F</a>
+  <a href="#g">G</a>
+  <a href="#h">H</a>
+  <a href="#i">I</a>
+  <a href="#j">J</a>
+  <a href="#k">K</a>
+  <a href="#l">L</a>
+  <a href="#m">M</a>
+  <a href="#n">N</a>
+  <a href="#o">O</a>
+  <a href="#p">P</a>
+  <a href="#q">Q</a>
+  <a href="#r">R</a>
+  <a href="#s">S</a>
+  <a href="#t">T</a>
+  <a href="#u">U</a>
+  <a href="#v">V</a>
+  <a href="#w">w</a>
+  <a href="#x">X</a>
+  <a href="#y">Y</a>
+  <a href="#z">Z</a>
+
+
+
+
+</div>
+    
+
+      <ul>
+          <li id="a"><p name="a" class="title">A</p>
+              <ul>
+                  <li>aku</li>
+              </ul>
+          </li>
+          <li id="b"><p name="b" class="title">B</p>
+              <ul>
+                  <li>bangkit</li>
+              </ul>
+          </li>
+          <li id="c"><p name="c" class="title">C</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="d"><p name="d" class="title">D</p>
+           <ul>
+              
+            </ul>
+           </li>
+            <li id="e"><p name="e" class="title">E</p>
+              <ul>
+            
+              </ul>
+            </li>
+            <li id="f"><p name="f" class="title">F</p>
+             <ul>
+          
+            </ul>
+            </li>
+          <li id="g"><p name="g" class="title">G</p>
+            <ul>
+                  
+            </ul>
+          </li>
+          <li id="h"><p name="h" class="title">H</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="i"><p name="i" class="title">I</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="j"><p name="j" class="title">J</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="k"><p name="k" class="title">K</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="l"><p name="l" class="title">L</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="m"><p name="m" class="title">M</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="n"><p name="n" class="title">N</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="o"><p name="o" class="title">O</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="p"><p name="p" class="title">P</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="q"><p name="q" class="title">Q</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="r"><p name="r" class="title">R</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="s"><p name="s" class="title">S</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="t"><p name="t" class="title">T</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="u"><p name="u" class="title">U</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="v"><p name="v" class="title">V</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="w"><p name="w" class="title">W</p>
+            <ul>
+      
+            </ul>
+          </li>
+          <li id="x"><p name="x" class="title">X</p>
+            <ul>
+                
+            </ul>
+          </li>
+          <li id="y"><p name="y" class="title">Y</p>
+            <ul>
+                
+            </ul>
+          </li>
+                      
+          <li id="z"><p name="z" class="title">Z</p>
+              <ul>
+                  
+              </ul>
+          </li>
+      </ul>
+    </body>
+  
 </ion-content>
