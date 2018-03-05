@@ -8,7 +8,6 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { TestingPage } from '../pages/testing/testing';
 import { HttpModule } from '@angular/http';
 import { SettingPage } from '../pages/Setting/Setting';
 import { LoginPage } from '../pages/Login/Login';
@@ -25,7 +24,6 @@ import { RegisterPageModule } from '../pages/register/register.module';
     LoginPage,  
     HomePage,
     ListPage,
-    TestingPage,
     SettingPage
    
 
@@ -46,7 +44,6 @@ import { RegisterPageModule } from '../pages/register/register.module';
     LoginPage,
     HomePage,
     ListPage,
-    TestingPage,
     SettingPage
     
     
